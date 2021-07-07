@@ -25,12 +25,12 @@ const App = () => {
   const content = [
     {
       tab: "Section 1",
-      content: "I'm the content of the Section 1",
+      content: "I'm the content of the Section 1"
     },
     {
       tab: "Section 2",
-      content: "I'm the content of the Section 2",
-    },
+      content: "I'm the content of the Section 2"
+    }
   ];
   const { currentItem, changeItem } = useTabs(0, content);
 
@@ -56,7 +56,7 @@ const App = () => {
   //usePreventLeave
   const { enablePrevent, disablePrevent } = usePreventLeave();
 
-  //8. useBeforeLeave
+  //useBeforeLeave
   const begForLife = () => console.log("Pls dont leave");
   useBeforeLeave(begForLife);
 
@@ -81,12 +81,12 @@ const App = () => {
 
   //useNotification
   const triggerNotif = useNotification("Can I steal your kimchi?", {
-    body: "I love kimchi, dont you?",
+    body: "I love kimchi, dont you?"
   });
 
   //useAxios
   const { loading, data, refetch } = useAxios({
-    url: "https://yts-proxy.now.sh/list_movies.json",
+    url: "https://yts-proxy.now.sh/list_movies.json"
   });
 
   return (
